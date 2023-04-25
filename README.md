@@ -13,7 +13,7 @@ Hello! I'm RubsRz, a software developer with experience in different technologie
 Here are some of my featured projects:
 
 - [Portfolio](https://ruben-rodriguez.netlify.app/) 🌐: A website that contains information about me, my skills, and some of my most prominent projects.
-- [Ionic Transportistas](https://github.com/RubsRz/ionicTransportistas) 📲: A mobile application developed with Ionic that allows the registration of personnel entries and exits.
+- [QR Check-In/Out Tracker](https://github.com/RubsRz/QR-Check-In-Out-Tracker) 📲: A mobile application developed with Ionic that allows the registration of personnel entries and exits.
 - [Simulador Uber](https://github.com/RubsRz/SimuladorUber) 🚗: A web application developed with Angular that simulates the operation of the popular transportation application Uber.
 
 ## GitHub Stats 📈
