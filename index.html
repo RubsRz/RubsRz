@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="¡Hola! Soy Rubén Rodríguez, estudiante de Desarrollo de Software. Amante de Desarrollo Web" />
+    <meta name="author" content="Rubén Rodríguez" />
+    <meta name="theme-color" content="#fff" />
+    <title>Rubén Rodríguez | Portafolio Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="src/ruben.png" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="loader">
+            <div class="chaotic-orbit"></div>
+        </div>
+    </div>
+    <nav>
+        <div class="open-btn" onclick="showSidebar()">
+            <i class="uil uil-bars"></i>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <!-- <img id="flag" src="path/to/spanish-flag.png" alt="Change Language" /> -->
+        <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+        </label>
+
+    </nav>
+    <div class="sidebar">
+        <div class="close-btn" onclick="hideSidebar()">
+            <i class="uil uil-multiply"></i>
+        </div>
+        <ul onclick="hideSidebar()">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="overlay" onclick="hideSidebar()"></div>
+        <div id="home">
+            <section class="home-title">
+                <h1>
+                    ¡Hola!<br /> Soy Rubén Rodríguez
+                </h1>
+                <h3>Desarrollador de Software Multiplataforma</h3>
+
+                <a href="./src/cv/CV - RUBEN RODRIGUEZ - ESP.pdf" id="linkcv" download="CV - Rodríguez Pérez Rubén">
+                    <button class="button">
+                        Descarga Mi CV    
+                    </button>
+                </a>
+            </section>
+            <section class="home-img">
+                <img src="src/ruben.png" alt="perfil" width="100%" />
+            </section>
+        </div>
+        <div id="about">
+            <section>
+                <h2>Sobre mi</h2>
+                <p>
+                    Soy estudiante de Desarrollo de Software Multiplataforma, mi meta es especializarme en el desarrollo web usando las tecnologias mas recientes. Me gusta continuar aprendiendo nuevas cosas y aplicarlas de la mejor manera posible.
+                </p>
+                <br />
+            </section>
+        </div>
+        <div id="skills">
+            <h2>Habilidades</h2>
+            <div class="screen">
+                <div class="desktop">
+                    <div class="skills"></div>
+                </div>
+                <div class="bar">
+                    <div class="logo"><i class="fa-brands fa-windows"></i></div>
+                    <div class="time"></div>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <h2>Proyectos De Desarrollo Web</h2>
+            <div class="projects"></div>
+        </div>
+        <div id="contact">
+            <h2>Contacto</h2>
+            <div class="contact">
+                <form name="contact-form" netlify>
+                    <input type="text" name="name" placeholder="Nombre" required />
+                    <input type="email" name="email" placeholder="Email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" title="Ingrese un email válido" required/>
+                    <textarea name="message" id="" cols="30" rows="8" placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="social">
+                    <a href="https://github.com/RubsRz" target="_blank">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=524494343960" target="_blank">
+                        <i class="uil uil-whatsapp"></i>
+                    </a>
+                    <a href="mailto:  rodriguezperezrubenalejandro@gmail.com" target="_blank">
+                        <i class="uil uil-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ruben-alejandro-rodr%C3%ADguez-p%C3%A9rez-70ab6b235/" target="_blank">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://t.me/rubsrz" target="_blank">
+                        <i class="uil uil-telegram-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <!-- pendiente -->
+        </footer>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a7b60a32b5.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
