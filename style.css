@@ -545,7 +545,7 @@ h2 {
 /* DESKTOP */
 
 .screen {
-    background: url("fondo.jpg");
+    background: url("src/fondo.jpg");
     background-size: cover;
     background-position: center;
     width: calc(100% - 20px);
