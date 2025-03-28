@@ -5,13 +5,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="¡Hola! Soy Rubén Rodríguez, estudiante de Desarrollo de Software. Amante de Desarrollo Web" />
+    <meta name="description" content="¡Hola! Soy Rubén Rodríguez, Desarrollador de Software Multiplataforma. Especializado en desarrollo web y móvil." />
     <meta name="author" content="Rubén Rodríguez" />
-    <meta name="theme-color" content="#fff" />
-    <title>Rubén Rodríguez | Portafolio Web</title>
+    <meta name="theme-color" content="#6c63ff" />
+    <title>Rubén Rodríguez | Portafolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="src/ruben.png" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- <link rel="shortcut icon" href="src/ruben.png" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <script src="https://kit.fontawesome.com/a7b60a32b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -21,26 +24,27 @@
         </div>
     </div>
     <nav>
-        <div class="open-btn" onclick="showSidebar()">
-            <i class="uil uil-bars"></i>
+        <div class="nav-container">
+            <div class="open-btn" onclick="showSidebar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+            </label>
         </div>
-        <ul class="menu">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Sobre mi</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-        <!-- <img id="flag" src="path/to/spanish-flag.png" alt="Change Language" /> -->
-        <label class="switch">
-            <input type="checkbox" />
-            <span class="slider"></span>
-        </label>
-
     </nav>
-    <div class="sidebar">
+    
+    <div class="sidebar" style="display: none">
         <div class="close-btn" onclick="hideSidebar()">
-            <i class="uil uil-multiply"></i>
+            <i class="fa-solid fa-xmark"></i>
         </div>
         <ul onclick="hideSidebar()">
             <li><a href="#home">Inicio</a></li>
@@ -50,80 +54,208 @@
             <li><a href="#contact">Contacto</a></li>
         </ul>
     </div>
+    
     <div class="main">
-        <div class="overlay" onclick="hideSidebar()"></div>
+        <div class="overlay" onclick="hideSidebar()" style="display: none;"></div>
         <div id="home">
             <section class="home-title">
                 <h1>
-                    ¡Hola!<br /> Soy Rubén Rodríguez
+                    <span class="greeting animate__animated animate__fadeIn">¡Hola!</span><br />
+                    <span class="name animate__animated animate__fadeIn my-name">Soy Rubén Rodríguez</span>
                 </h1>
-                <h3>Desarrollador de Software Multiplataforma</h3>
-
+                <h3 class="typing-animation"></h3>
+                <div class="tech-stack">
+                    <img src="src/habilidades/html-5.svg" alt="HTML" title="HTML5">
+                    <img src="src/habilidades/css-3.svg" alt="CSS" title="CSS3">
+                    <img src="src/habilidades/js.svg" alt="JavaScript" title="JavaScript">
+                    <img src="src/habilidades/react.svg" alt="React" title="React">
+                    <img src="src/habilidades/angular-icon.svg" alt="Angular" title="Angular">
+                    <img src="src/habilidades/node-js.svg" alt="Node.js" title="Node.js">
+                </div>
                 <a href="./src/cv/CV - RUBEN RODRIGUEZ - ESP.pdf" id="linkcv" download="CV - Rodríguez Pérez Rubén">
-                    <button class="button">
-                        Descarga Mi CV    
+                    <button class="button animate__animated animate__fadeInUp">
+                        Descarga Mi CV <i class="fa-solid fa-download"></i>
                     </button>
                 </a>
             </section>
             <section class="home-img">
-                <img src="src/ruben.png" alt="perfil" width="100%" />
+                <div class="profile-container">
+                    <img src="src/ruben.png" alt="Rubén Rodríguez" class="profile-img" />
+                    <div class="decoration-circle"></div>
+                </div>
             </section>
         </div>
         <div id="about">
             <section>
-                <h2>Sobre mi</h2>
-                <p>
-                    Soy estudiante de Desarrollo de Software Multiplataforma, mi meta es especializarme en el desarrollo web usando las tecnologias mas recientes. Me gusta continuar aprendiendo nuevas cosas y aplicarlas de la mejor manera posible.
-                </p>
-                <br />
+                <h2 class="section-title">Sobre mi</h2>
+                <div class="about-content">
+                    <p>
+                        Soy un apasionado Desarrollador de Software Multiplataforma con experiencia en creación de aplicaciones web y móviles. Mi objetivo es crear soluciones tecnológicas innovadoras que impacten positivamente en la vida de las personas.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-award"></i>
+                            <div>
+                                <h4>2+ Años</h4>
+                                <p>de experiencia</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <h4>15+ Proyectos</h4>
+                                <p>completados</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <!-- <i class="fa-solid fa-book"></i> -->
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <h4>Aprendizaje</h4>
+                                <p>continuo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
         <div id="skills">
-            <h2>Habilidades</h2>
-            <div class="screen">
-                <div class="desktop">
-                    <div class="skills"></div>
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-container">
+                <div class="skills-categories">
+                    <button class="category-btn active" data-category="all">Todas</button>
+                    <button class="category-btn" data-category="frontend">Frontend</button>
+                    <button class="category-btn" data-category="backend">Backend</button>
+                    <button class="category-btn" data-category="mobile">Mobile</button>
+                    <button class="category-btn" data-category="tools">Herramientas</button>
                 </div>
-                <div class="bar">
-                    <div class="logo"><i class="fa-brands fa-windows"></i></div>
-                    <div class="time"></div>
-                </div>
+                <div class="skills-grid"></div>
             </div>
         </div>
         <div id="projects">
-            <h2>Proyectos De Desarrollo Web</h2>
-            <div class="projects"></div>
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-grid"></div>
         </div>
         <div id="contact">
-            <h2>Contacto</h2>
-            <div class="contact">
-                <form name="contact" netlify>
-                    <input type="text" name="name" placeholder="Nombre" required />
-                    <input type="email" name="email" placeholder="Email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" title="Ingrese un email válido" required/>
-                    <textarea name="message" id="" cols="30" rows="8" placeholder="Mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-container">
+                <form name="contact" netlify class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Nombre" required />
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" title="Ingrese un email válido" required/>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Mensaje" required></textarea>
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+                    <button type="submit" class="button-send" style="align-items: center;">
+                        Enviar Mensaje <i class="fa-solid fa-angles-right"></i>
+                    </button>
                 </form>
-                <div class="social">
-                    <a href="https://github.com/RubsRz" target="_blank">
-                        <i class="uil uil-github"></i>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=524494343960" target="_blank">
-                        <i class="uil uil-whatsapp"></i>
-                    </a>
-                    <a href="mailto:  rodriguezperezrubenalejandro@gmail.com" target="_blank">
-                        <i class="uil uil-envelope"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ruben-alejandro-rodr%C3%ADguez-p%C3%A9rez-70ab6b235/" target="_blank">
-                        <i class="uil uil-linkedin"></i>
-                    </a>
-                    <a href="https://t.me/rubsrz" target="_blank">
-                        <i class="uil uil-telegram-alt"></i>
-                    </a>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>México</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>rodriguezperezrubenalejandro@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+52 449 434 3960</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/RubsRz" target="_blank" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=524494343960" target="_blank" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:rodriguezperezrubenalejandro@gmail.com" target="_blank" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ruben-alejandro-rodr%C3%ADguez-p%C3%A9rez-70ab6b235/" target="_blank" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://t.me/rubsrz" target="_blank" aria-label="Telegram">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <footer>
-            <!-- pendiente -->
+            <div class="footer-content">
+                <p>© <span id="year"></span> Rubén Rodríguez. Todos los derechos reservados.</p>
+                <p class="typewriter"></p>
+
+                <style>
+                    .typewriter {
+                        font-family: 'Courier New', monospace;
+                        color: var(--primary);
+                        display: inline-block;
+                        border-right: 2px solid var(--primary);
+                        padding-right: 3px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        animation: blinkCursor 0.7s step-end infinite;
+                    }
+
+                    @keyframes blinkCursor {
+                        from, to { border-color: transparent }
+                        50% { border-color: var(--primary) }
+                    }
+                </style>
+
+                <script>
+                    // Typewriter effect
+                    function typeWriterEffect() {
+                        const element = document.querySelector('.typewriter');
+                        const text = "while(!succeed) { try(); }";
+                        let i = 0;
+                        let isDeleting = false;
+                        let typingSpeed = 150;
+
+                        function type() {
+                            const currentText = text.substring(0, i);
+                            element.textContent = currentText;
+
+                            if (!isDeleting && i === text.length) {
+                                isDeleting = true;
+                                typingSpeed = 70;
+                                setTimeout(type, 1500); // Pausa al completar
+                            } else if (isDeleting && i === 0) {
+                                isDeleting = false;
+                                typingSpeed = 150;
+                                setTimeout(type, 500); // Pausa al borrar
+                            } else {
+                                i = isDeleting ? i - 1 : i + 1;
+                                setTimeout(type, typingSpeed);
+                            }
+                        }
+
+                        setTimeout(type, 1000); // Retraso inicial
+                    }
+
+                    // Llama a la función después de que todo cargue
+                    window.addEventListener('load', () => {
+                        typeWriterEffect();
+                    });
+                </script>
         </footer>
     </div>
 
