@@ -2,269 +2,127 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="¡Hola! Soy Rubén Rodríguez, Desarrollador de Software Multiplataforma. Especializado en desarrollo web y móvil." />
-    <meta name="author" content="Rubén Rodríguez" />
-    <meta name="theme-color" content="#6c63ff" />
-    <title>Rubén Rodríguez | Portafolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="shortcut icon" href="src/ruben.png" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" /> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
-    <script src="https://kit.fontawesome.com/a7b60a32b5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijera, Lagarto, Spock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/icon.webp" type="image/x-icon">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="loader">
-            <div class="chaotic-orbit"></div>
-        </div>
-    </div>
-    <nav>
-        <div class="nav-container">
-            <div class="open-btn" onclick="showSidebar()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <ul class="menu">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre mi</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <label class="switch">
-                <input type="checkbox" />
-                <span class="slider"></span>
-            </label>
-        </div>
-    </nav>
-    
-    <div class="sidebar" style="display: none">
-        <div class="close-btn" onclick="hideSidebar()">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-        <ul onclick="hideSidebar()">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Sobre mi</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </div>
-    
-    <div class="main">
-        <div class="overlay" onclick="hideSidebar()" style="display: none;"></div>
-        <div id="home">
-            <section class="home-title">
-                <h1>
-                    <span class="greeting animate__animated animate__fadeIn">¡Hola!</span><br />
-                    <span class="name animate__animated animate__fadeIn my-name">Soy Rubén Rodríguez</span>
-                </h1>
-                <h3 class="typing-animation"></h3>
-                <div class="tech-stack">
-                    <img src="src/habilidades/html-5.svg" alt="HTML" title="HTML5">
-                    <img src="src/habilidades/css-3.svg" alt="CSS" title="CSS3">
-                    <img src="src/habilidades/js.svg" alt="JavaScript" title="JavaScript">
-                    <img src="src/habilidades/react.svg" alt="React" title="React">
-                    <img src="src/habilidades/angular-icon.svg" alt="Angular" title="Angular">
-                    <img src="src/habilidades/node-js.svg" alt="Node.js" title="Node.js">
+    <div class="container">
+        <header>
+            <h1>Piedra Papel Tijera Lagarto Spock</h1>
+            <div class="rules">
+                <button id="rules-btn" class="rules-btn">
+                    <i class="fas fa-question-circle"></i> Reglas
+                </button>
+                <div class="rules-panel hidden">
+                    <div class="rules-header">
+                        <h3>Reglas del Juego</h3>
+                        <button class="close-rules">&times;</button>
+                    </div>
+                    <div class="rules-content">
+                        <div class="rule-item">
+                            <i class="fas fa-hand-scissors"></i>
+                            <p>Tijera corta Papel</p>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-hand-paper"></i>
+                            <p>Papel cubre Piedra</p>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-hand-rock"></i>
+                            <p>Piedra aplasta Lagarto</p>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fa-solid fa-hand-lizard"></i>
+                            <p>Lagarto envenena Spock</p>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-hand-spock"></i>
+                            <p>Spock rompe Tijera</p>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-hand-scissors"></i>
+                            <p>Tijera decapita Lagarto</p>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fa-solid fa-hand-lizard"></i>
+                            <p>Lagarto come Papel</p>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-hand-paper"></i>
+                            <p>Papel desautoriza Spock</p>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-hand-spock"></i>
+                            <p>Spock vaporiza Piedra</p>
+                        </div>
+                        <div class="rule-item">
+                            <i class="fas fa-hand-rock"></i>
+                            <p>Piedra aplasta Tijera</p>
+                        </div>
+                    </div>
                 </div>
-                <a href="./src/cv/CV - RUBEN RODRIGUEZ - ESP.pdf" id="linkcv" download="CV - Rodríguez Pérez Rubén">
-                    <button class="button animate__animated animate__fadeInUp">
-                        Descarga Mi CV <i class="fa-solid fa-download"></i>
+            </div>
+        </header>
+
+        <main>
+            <div class="game-area">
+                <div class="computer-section">
+                    <div class="choice-img">
+                        <div id="cpu-img" class="icon-placeholder">
+                            <i class="fas fa-question"></i>
+                        </div>
+                    </div>
+                    <div class="score">Computadora: <span id="cpu-score">0</span></div>
+                </div>
+
+                <div id="result-text" class="result-text">¡Escoge tu jugada!</div>
+
+                <div class="player-section">
+                    <div class="choice-img">
+                        <div id="user-img" class="icon-placeholder">
+                            <i class="fas fa-question"></i>
+                        </div>
+                    </div>
+                    <div class="score">Tú: <span id="user-score">0</span></div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="choices">
+                    <button onclick="playGame(0)" class="choice-btn" data-choice="rock">
+                        <i class="fas fa-hand-rock"></i>
+                        <span>Piedra</span>
                     </button>
-                </a>
-            </section>
-            <section class="home-img">
-                <div class="profile-container">
-                    <img src="src/ruben.png" alt="Rubén Rodríguez" class="profile-img" />
-                    <div class="decoration-circle"></div>
-                </div>
-            </section>
-        </div>
-        <div id="about">
-            <section>
-                <h2 class="section-title">Sobre mi</h2>
-                <div class="about-content">
-                    <p>
-                        Soy un apasionado Desarrollador de Software Multiplataforma con experiencia en creación de aplicaciones web y móviles. Mi objetivo es crear soluciones tecnológicas innovadoras que impacten positivamente en la vida de las personas.
-                    </p>
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <i class="fa-solid fa-award"></i>
-                            <div>
-                                <h4>2+ Años</h4>
-                                <p>de experiencia</p>
-                            </div>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <div>
-                                <h4>15+ Proyectos</h4>
-                                <p>completados</p>
-                            </div>
-                        </div>
-                        <div class="detail-item">
-                            <!-- <i class="fa-solid fa-book"></i> -->
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <div>
-                                <h4>Aprendizaje</h4>
-                                <p>continuo</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div id="skills">
-            <h2 class="section-title">Habilidades</h2>
-            <div class="skills-container">
-                <div class="skills-categories">
-                    <button class="category-btn active" data-category="all">Todas</button>
-                    <button class="category-btn" data-category="frontend">Frontend</button>
-                    <button class="category-btn" data-category="backend">Backend</button>
-                    <button class="category-btn" data-category="mobile">Mobile</button>
-                    <button class="category-btn" data-category="tools">Herramientas</button>
-                </div>
-                <div class="skills-grid"></div>
-            </div>
-        </div>
-        <div id="projects">
-            <h2 class="section-title">Proyectos</h2>
-            <div class="projects-grid"></div>
-        </div>
-        <div id="contact">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-container">
-                <form name="contact" netlify class="contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Nombre" required />
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" title="Ingrese un email válido" required/>
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Mensaje" required></textarea>
-                        <i class="fa-solid fa-comment"></i>
-                    </div>
-                    <button type="submit" class="button-send" style="align-items: center;">
-                        Enviar Mensaje <i class="fa-solid fa-angles-right"></i>
+                    <button onclick="playGame(1)" class="choice-btn" data-choice="paper">
+                        <i class="fas fa-hand-paper"></i>
+                        <span>Papel</span>
                     </button>
-                </form>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <h4>Ubicación</h4>
-                            <p>México</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>rodriguezperezrubenalejandro@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <h4>Teléfono</h4>
-                            <p>+52 449 434 3960</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/RubsRz" target="_blank" aria-label="GitHub">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=524494343960" target="_blank" aria-label="WhatsApp">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a href="mailto:rodriguezperezrubenalejandro@gmail.com" target="_blank" aria-label="Email">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ruben-alejandro-rodr%C3%ADguez-p%C3%A9rez-70ab6b235/" target="_blank" aria-label="LinkedIn">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://t.me/rubsrz" target="_blank" aria-label="Telegram">
-                            <i class="fa-brands fa-telegram"></i>
-                        </a>
-                    </div>
+                    <button onclick="playGame(2)" class="choice-btn" data-choice="scissors">
+                        <i class="fas fa-hand-scissors"></i>
+                        <span>Tijera</span>
+                    </button>
+                    <button onclick="playGame(3)" class="choice-btn" data-choice="lizard">
+                        <i class="fa-solid fa-hand-lizard"></i>
+                        <span>Lagarto</span>
+                    </button>
+                    <button onclick="playGame(4)" class="choice-btn" data-choice="spock">
+                        <i class="fas fa-hand-spock"></i>
+                        <span>Spock</span>
+                    </button>
                 </div>
+                <button id="reset-btn" class="reset-btn">
+                    <i class="fas fa-redo"></i> Reiniciar
+                </button>
             </div>
-        </div>
-        <footer>
-            <div class="footer-content">
-                <p>© <span id="year"></span> Rubén Rodríguez. Todos los derechos reservados.</p>
-                <p class="typewriter"></p>
-
-                <style>
-                    .typewriter {
-                        font-family: 'Courier New', monospace;
-                        color: var(--primary);
-                        display: inline-block;
-                        border-right: 2px solid var(--primary);
-                        padding-right: 3px;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        animation: blinkCursor 0.7s step-end infinite;
-                    }
-
-                    @keyframes blinkCursor {
-                        from, to { border-color: transparent }
-                        50% { border-color: var(--primary) }
-                    }
-                </style>
-
-                <script>
-                    // Typewriter effect
-                    function typeWriterEffect() {
-                        const element = document.querySelector('.typewriter');
-                        const text = "while(!succeed) { try(); }";
-                        let i = 0;
-                        let isDeleting = false;
-                        let typingSpeed = 150;
-
-                        function type() {
-                            const currentText = text.substring(0, i);
-                            element.textContent = currentText;
-
-                            if (!isDeleting && i === text.length) {
-                                isDeleting = true;
-                                typingSpeed = 70;
-                                setTimeout(type, 1500); // Pausa al completar
-                            } else if (isDeleting && i === 0) {
-                                isDeleting = false;
-                                typingSpeed = 150;
-                                setTimeout(type, 500); // Pausa al borrar
-                            } else {
-                                i = isDeleting ? i - 1 : i + 1;
-                                setTimeout(type, typingSpeed);
-                            }
-                        }
-
-                        setTimeout(type, 1000); // Retraso inicial
-                    }
-
-                    // Llama a la función después de que todo cargue
-                    window.addEventListener('load', () => {
-                        typeWriterEffect();
-                    });
-                </script>
-        </footer>
+        </main>
     </div>
 
-    <script src="https://kit.fontawesome.com/a7b60a32b5.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
-    <script src="index.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
