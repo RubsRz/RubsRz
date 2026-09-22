@@ -1,5 +1,9 @@
 # Hola, soy Rubén 👋
 
+<a href="https://ruben-rodriguez.netlify.app/">
+  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=22&duration=3000&pause=800&color=5B93FF&vCenter=true&width=520&height=40&lines=Desarrollador+Web+%26+Mobile;React+%C2%B7+Angular+%C2%B7+Ionic+%C2%B7+Node.js;Del+backend+a+la+pantalla+%F0%9F%9A%80" alt="Desarrollador Web & Mobile" />
+</a>
+
 **Ingeniero en Desarrollo de Software** en México. Construyo aplicaciones web y móviles, del backend a la pantalla.
 
 - 💼 Desarrollador web en **QMC MEX**: sistemas de gestión de cursos para Mercedes-Benz (EE. UU. y México)
@@ -8,13 +12,17 @@
 
 🌐 **Portafolio:** [ruben-rodriguez.netlify.app](https://ruben-rodriguez.netlify.app/)
 
+<a href="https://ruben-rodriguez.netlify.app/">
+  <img src="src/img/portfolio-preview.webp" alt="Vista previa del portafolio de Rubén Rodríguez" width="100%" />
+</a>
+
 ## 🛠 Stack
 
 <p>
   <a href="https://ruben-rodriguez.netlify.app/#stack">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react,angular,ts,js,vite,nodejs,express,php,python,mongodb,mysql,firebase,git,jest,linux&theme=dark&perline=15" />
-      <img alt="React, Angular, TypeScript, JavaScript, Vite, Node.js, Express, PHP, Python, MongoDB, MySQL, Firebase, Git, Jest, Linux" src="https://skillicons.dev/icons?i=react,angular,ts,js,vite,nodejs,express,php,python,mongodb,mysql,firebase,git,jest,linux&theme=light&perline=15" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Cangular%2Cts%2Cjs%2Cvite%2Cnodejs%2Cexpress%2Cphp%2Cpython%2Cmongodb%2Cmysql%2Cfirebase%2Cgit%2Cjest%2Clinux&theme=dark&perline=8" />
+      <img alt="React, Angular, TypeScript, JavaScript, Vite, Node.js, Express, PHP, Python, MongoDB, MySQL, Firebase, Git, Jest, Linux" src="https://skillicons.dev/icons?i=react,angular,ts,js,vite,nodejs,express,php,python,mongodb,mysql,firebase,git,jest,linux&theme=light&perline=8" />
     </picture>
   </a>
 </p>
