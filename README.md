@@ -1,35 +1,45 @@
-# RubsRz 🛸
+# Hola, soy Rubén 👋
 
-Hello! I'm RubsRz, a software developer with experience in different technologies. I am passionate about the world of technology and always seek to stay updated on the latest trends and tools.
+**Ingeniero en Desarrollo de Software** en México. Construyo aplicaciones web y móviles, del backend a la pantalla.
 
-## About me 👨‍💻
+- 💼 Desarrollador web en **QMC MEX**: sistemas de gestión de cursos para Mercedes-Benz (EE. UU. y México)
+- 🚚 Freelance: sitio corporativo de [Transportes Mixtos Miranda](https://transmiranda.com)
+- 📱 Apps móviles con Ionic y React Native · APIs con Node.js
 
-- Currently, I'm focused on web development and mobile applications, using technologies such as Node.js, Express.js, Angular, Ionic, and TypeScript.
-- I love learning new technologies and am open to working with other languages and tools.
-- I'm constantly learning, improving my programming skills, and looking for new opportunities to grow professionally.
+🌐 **Portafolio:** [ruben-rodriguez.netlify.app](https://ruben-rodriguez.netlify.app/)
 
-## Featured Projects 🚀
+## 🛠 Stack
 
-Here are some of my featured projects:
+<p>
+  <a href="https://ruben-rodriguez.netlify.app/#stack">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react,angular,ts,js,vite,nodejs,express,php,python,mongodb,mysql,firebase,git,jest,linux&theme=dark&perline=15" />
+      <img alt="React, Angular, TypeScript, JavaScript, Vite, Node.js, Express, PHP, Python, MongoDB, MySQL, Firebase, Git, Jest, Linux" src="https://skillicons.dev/icons?i=react,angular,ts,js,vite,nodejs,express,php,python,mongodb,mysql,firebase,git,jest,linux&theme=light&perline=15" />
+    </picture>
+  </a>
+</p>
 
-- [Portfolio](https://ruben-rodriguez.netlify.app/) 🌐: A website that contains information about me, my skills, and some of my most prominent projects.
-- [QR Check-In/Out Tracker](https://github.com/RubsRz/QR-Check-In-Out-Tracker) 📲: A mobile application developed with Ionic that allows the registration of personnel entries and exits.
-- [Uber Simulator](https://github.com/RubsRz/SimuladorUber) 🚗: A web application developed with Angular that simulates the operation of the popular transportation application Uber.
+Mobile: **Ionic · React Native · Capacitor**
 
-## GitHub Stats 📈
+## 🚀 Proyectos destacados
 
-![RubsRz's GitHub stats](https://github-readme-stats.vercel.app/api?username=RubsRz&show_icons=true&theme=radical&count_private=true) 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=RubsRz&layout=compact&theme=radical&langs_count=6&hide=html,css)](https://github.com/anuraghazra/github-readme-stats)
+| Proyecto | Qué es | Stack |
+| :-- | :-- | :-- |
+| [**Transportes Mixtos Miranda**](https://transmiranda.com) | Sitio corporativo para una empresa de transporte de carga: desarrollo, hosting, SEO y analítica | React · Vite · PHP |
+| [**QR Check-In / Out**](https://github.com/RubsRz/QR-Check-In-Out-Tracker) | App móvil para registrar entradas y salidas de personal con códigos QR | Ionic · Angular · Capacitor |
+| [**Transportistas API**](https://github.com/RubsRz/ApiTransportistas) | Backend de una app móvil para asignar vehículos a conductores, con pruebas en Jest | Node.js · Express · MongoDB |
+| [**Generador de diplomas PDF**](https://github.com/RubsRz/PDF-Generator-using-Puppeteer) | Genera certificados en PDF a partir de una plantilla HTML | Node.js · Puppeteer |
 
-## Contact 📞
+## 📫 Contacto
 
-If you want to collaborate on a project or just chat about technology, you can contact me through my social networks:
+[![Portafolio](https://img.shields.io/badge/Portafolio-0b0d12?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ruben-rodriguez.netlify.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ruben-alejandro-rodr%C3%ADguez-p%C3%A9rez-70ab6b235/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rodriguezperezrubenalejandro@gmail.com)
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rubsrz)
 
-🐙 Github: https://github.com/RubsRz <br>
-🔗 LinkedIn: https://www.linkedin.com/in/ruben-alejandro-rodr%C3%ADguez-p%C3%A9rez-70ab6b235/ <br>
-💬 Telegram: https://t.me/rubsrz <br>
-📱 Whatsapp: https://api.whatsapp.com/send?phone=524494343960 <br>
+<br />
 
-or you can also send me an email to <a href="mailto:rodriguezperezrubenalejandro@gmail.com">ruben's email 📧</a>
-
-Thanks for visiting my GitHub profile!
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RubsRz/RubsRz/output/github-snake-dark.svg" />
+  <img alt="Animación de contribuciones" src="https://raw.githubusercontent.com/RubsRz/RubsRz/output/github-snake.svg" />
+</picture>
