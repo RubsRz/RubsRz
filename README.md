@@ -21,8 +21,8 @@
 <p>
   <a href="https://ruben-rodriguez.netlify.app/#stack">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Cangular%2Cts%2Cjs%2Cvite%2Cnodejs%2Cexpress%2Cphp%2Cpython%2Cmongodb%2Cmysql%2Cfirebase%2Cgit%2Cjest%2Clinux&theme=dark&perline=8" />
-      <img alt="React, Angular, TypeScript, JavaScript, Vite, Node.js, Express, PHP, Python, MongoDB, MySQL, Firebase, Git, Jest, Linux" src="https://skillicons.dev/icons?i=react,angular,ts,js,vite,nodejs,express,php,python,mongodb,mysql,firebase,git,jest,linux&theme=light&perline=8" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Cangular%2Cts%2Cjs%2Cvite%2Cnodejs%2Cexpress%2Cphp%2Cpython%2Cmongodb%2Cmysql%2Cfirebase%2Cgit%2Clinux&theme=dark&perline=8" />
+      <img alt="React, Angular, TypeScript, JavaScript, Vite, Node.js, Express, PHP, Python, MongoDB, MySQL, Firebase, Git, Linux" src="https://skillicons.dev/icons?i=react,angular,ts,js,vite,nodejs,express,php,python,mongodb,mysql,firebase,git,linux&theme=light&perline=8" />
     </picture>
   </a>
 </p>

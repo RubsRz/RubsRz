@@ -205,6 +205,9 @@ const stack = [
             { name: "React Native", icon: "react" },
             { name: "Ionic", icon: "ionic" },
             { name: "Capacitor", icon: "capacitor" },
+            { name: "Expo", icon: "expo", brand: "var(--text)" },
+            { name: "Android Studio", icon: "androidstudio" },
+            { name: "Xcode", icon: "xcode", brand: "#147efb" },
         ],
     },
     {
@@ -214,6 +217,16 @@ const stack = [
             { name: "Angular", icon: "angular" },
             { name: "TypeScript", icon: "typescript" },
             { name: "JavaScript", icon: "javascript" },
+            { name: "HTML5", icon: "html5" },
+            { name: "CSS3", icon: "css3" },
+            { name: "Sass", icon: "sass" },
+            { name: "Tailwind CSS", icon: "tailwindcss" },
+            { name: "Bootstrap", icon: "bootstrap" },
+            { name: "Next.js", icon: "nextdotjs", brand: "var(--text)" },
+            { name: "Vue.js", icon: "vuedotjs" },
+            { name: "Redux", icon: "redux" },
+            { name: "React Router", icon: "reactrouter" },
+            { name: "jQuery", icon: "jquery" },
             { name: "Vite", icon: "vite" },
         ],
     },
@@ -222,8 +235,15 @@ const stack = [
         items: [
             { name: "Node.js", icon: "nodedotjs" },
             { name: "Express", icon: "express", brand: "var(--text)" },
+            { name: "NestJS", icon: "nestjs" },
             { name: "PHP", icon: "php" },
+            { name: "Laravel", icon: "laravel" },
             { name: "Python", icon: "python" },
+            { name: "Django", icon: "django", brand: "#44b78b" },
+            { name: "Flask", icon: "flask", brand: "var(--text)" },
+            { name: "FastAPI", icon: "fastapi" },
+            { name: "Socket.io", icon: "socketdotio", brand: "var(--text)" },
+            { name: "JWT", icon: "jsonwebtokens", brand: "#fb015b" },
             { name: "Puppeteer", icon: "puppeteer" },
         ],
     },
@@ -231,7 +251,10 @@ const stack = [
         group: { es: "Datos", en: "Data" },
         items: [
             { name: "MongoDB", icon: "mongodb" },
+            { name: "Mongoose", icon: "mongoose", brand: "#c53030" },
             { name: "MySQL", icon: "fa-solid fa-database", brand: "#4479a1" },
+            { name: "PostgreSQL", icon: "postgresql" },
+            { name: "SQLite", icon: "sqlite" },
             { name: "Firebase", icon: "firebase" },
         ],
     },
@@ -239,9 +262,25 @@ const stack = [
         group: { es: "Herramientas", en: "Tools" },
         items: [
             { name: "Git", icon: "git" },
-            { name: "Jest", icon: "jest" },
+            { name: "GitHub", icon: "github", brand: "var(--text)" },
+            { name: "GitLab", icon: "gitlab" },
+            { name: "Docker", icon: "docker" },
+            { name: "Postman", icon: "postman" },
+            { name: "npm", icon: "npm", brand: "#cb3837" },
+            { name: "VS Code", icon: "vscode" },
             { name: "Linux", icon: "linux", brand: "#fcc624" },
             { name: "WordPress", icon: "wordpress" },
+            { name: "Figma", icon: "figma" },
+            { name: "Jira", icon: "jira" },
+            { name: "Trello", icon: "trello" },
+        ],
+    },
+    {
+        group: { es: "Deploy y hosting", en: "Deploy & hosting" },
+        items: [
+            { name: "Netlify", icon: "netlify" },
+            { name: "AWS", icon: "amazonwebservices", brand: "#ff9900" },
+            { name: "Nginx", icon: "nginx" },
             { name: "cPanel", icon: "fa-solid fa-server", brand: "#ff6c2c" },
         ],
     },
@@ -250,6 +289,15 @@ const stack = [
         items: [
             { name: "Google Analytics", icon: "googleanalytics", brand: "#e37400" },
             { name: "Search Console", icon: "googlesearchconsole", brand: "#458cf5" },
+            { name: "Tag Manager", icon: "googletagmanager", brand: "#246fdb" },
+        ],
+    },
+    {
+        group: { es: "IA", en: "AI" },
+        items: [
+            { name: "GitHub Copilot", icon: "githubcopilot", brand: "var(--text)" },
+            { name: "ChatGPT", icon: "openai", brand: "var(--text)" },
+            { name: "Claude", icon: "claude", brand: "#d97757" },
         ],
     },
 ];
@@ -265,8 +313,7 @@ const i18n = {
         "nav.projects": "Proyectos",
         "nav.stack": "Stack",
         "nav.contact": "Contacto",
-        "hero.eyebrow": "Ingeniero en Desarrollo de Software · México",
-        "hero.lead": "Construyo aplicaciones web y móviles, del backend a la pantalla. He hecho sistemas internos para empresas como Mercedes-Benz, apps en Ionic y React Native, y APIs en Node.js.",
+        "hero.lead": "Del backend a la pantalla. He hecho sistemas internos para empresas como Mercedes-Benz, apps en Ionic y React Native, y APIs en Node.js.",
         "hero.ctaProjects": "Ver proyectos",
         "hero.ctaCv": "Descargar CV",
         "hero.statYears": "años de experiencia profesional",
@@ -288,12 +335,15 @@ const i18n = {
         "type.web": "Web",
         "type.api": "Backend / API",
         "stack.title": "Stack",
+        "stack.showAll": "Ver todas",
+        "stack.showLess": "Ver menos",
         "contact.title": "¿Hablamos?",
         "contact.sub": "Si tienes un proyecto, una vacante o solo quieres platicar de tecnología, escríbeme.",
         "contact.name": "Nombre",
         "contact.email": "Email",
         "contact.message": "Mensaje",
         "contact.send": "Enviar mensaje",
+        "contact.location": "México",
     },
     en: {
         "skip": "Skip to content",
@@ -301,8 +351,7 @@ const i18n = {
         "nav.projects": "Projects",
         "nav.stack": "Stack",
         "nav.contact": "Contact",
-        "hero.eyebrow": "Software Engineer · Mexico",
-        "hero.lead": "I build web and mobile apps, from the backend to the screen. I've shipped internal systems for companies like Mercedes-Benz, apps with Ionic and React Native, and APIs with Node.js.",
+        "hero.lead": "From the backend to the screen. I've shipped internal systems for companies like Mercedes-Benz, apps with Ionic and React Native, and APIs with Node.js.",
         "hero.ctaProjects": "See projects",
         "hero.ctaCv": "Download CV",
         "hero.statYears": "years of professional experience",
@@ -324,12 +373,15 @@ const i18n = {
         "type.web": "Web",
         "type.api": "Backend / API",
         "stack.title": "Stack",
+        "stack.showAll": "Show all",
+        "stack.showLess": "Show less",
         "contact.title": "Let's talk",
         "contact.sub": "Have a project, a job opening, or just want to chat about tech? Drop me a line.",
         "contact.name": "Name",
         "contact.email": "Email",
         "contact.message": "Message",
         "contact.send": "Send message",
+        "contact.location": "Mexico",
     },
 };
 
@@ -451,6 +503,69 @@ function renderStack() {
     `).join("");
 }
 
+// Cada fila del stack muestra solo una línea; el resto se oculta tras un chip "+N"
+// que despliega esa fila. Una fila desplegada termina con un chip "Ver menos".
+const stackList = document.getElementById("stack-list");
+const expandedRows = new Set();
+
+function chipButton(className, label, onClick) {
+    const li = document.createElement("li");
+    li.className = `chip-more ${className}`;
+    li.innerHTML = `<button type="button"></button>`;
+    li.firstChild.textContent = label;
+    li.firstChild.addEventListener("click", onClick);
+    return li;
+}
+
+function toggleRow(index, expand) {
+    if (expand) expandedRows.add(index);
+    else expandedRows.delete(index);
+    fitStack();
+}
+
+function fitStack() {
+    stackList.querySelectorAll(".chips").forEach((ul, index) => {
+        ul.querySelectorAll(".chip-more").forEach((el) => el.remove());
+        const chips = [...ul.children];
+        chips.forEach((chip) => (chip.hidden = false));
+
+        const top = chips[0].offsetTop;
+        if (!chips.some((chip) => chip.offsetTop > top)) {
+            expandedRows.delete(index);
+            return;
+        }
+
+        if (expandedRows.has(index)) {
+            ul.append(chipButton("chip-less", t("stack.showLess"), () => toggleRow(index, false)));
+            return;
+        }
+
+        chips.filter((chip) => chip.offsetTop > top).forEach((chip) => (chip.hidden = true));
+        const more = chipButton("", "", () => toggleRow(index, true));
+        ul.append(more);
+
+        const visible = chips.filter((chip) => !chip.hidden);
+        const update = () => {
+            const count = chips.length - visible.length;
+            more.firstChild.textContent = `+${count}`;
+            more.firstChild.setAttribute("aria-label", `${t("stack.showAll")} (${count})`);
+        };
+        update();
+        // Si el "+N" no cabe en la línea, se oculta un chip más
+        while (more.offsetTop > top && visible.length > 1) {
+            visible.pop().hidden = true;
+            update();
+        }
+    });
+}
+
+let fitFrame;
+window.addEventListener("resize", () => {
+    cancelAnimationFrame(fitFrame);
+    fitFrame = requestAnimationFrame(fitStack);
+});
+document.fonts?.ready.then(fitStack);
+
 function applyLang() {
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -462,6 +577,8 @@ function applyLang() {
     renderTimeline();
     renderProjects();
     renderStack();
+    fitStack();
+    reserveRoleHeight();
     observeReveals();
 }
 
@@ -528,6 +645,90 @@ if ("IntersectionObserver" in window) {
     header.classList.add("show-logo");
 }
 
+// Hero: el nombre se escribe una vez con un cursor; después el cursor pasa a la línea
+// de abajo, donde la palabra en azul se borra y se reescribe en loop.
+const HERO_ROLES = {
+    es: [
+        "Ingeniero en Desarrollo de Software",
+        "Desarrollador Full Stack",
+        "Desarrollador de Apps Móviles",
+        "Desarrollador Web",
+    ],
+    en: [
+        "Software Engineer",
+        "Full Stack Developer",
+        "Mobile App Developer",
+        "Web Developer",
+    ],
+};
+
+// Reserva la altura del texto más largo (en pantallas angostas puede ocupar dos líneas)
+function reserveRoleHeight() {
+    const role = document.querySelector(".hero-role");
+    const probe = role.cloneNode(false);
+    probe.style.cssText = `position:absolute;visibility:hidden;min-height:0;width:${role.clientWidth}px`;
+    role.after(probe);
+    const tallest = Math.max(...HERO_ROLES[lang].map((text) => {
+        probe.textContent = text + "\u00a0";
+        return probe.getBoundingClientRect().height;
+    }));
+    probe.remove();
+    role.style.minHeight = `${Math.ceil(tallest)}px`;
+}
+window.addEventListener("resize", reserveRoleHeight);
+document.fonts?.ready.then(reserveRoleHeight);
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function runHero() {
+    const h1 = document.querySelector(".hero-name");
+    const roleWord = document.getElementById("role-word");
+    const caret = document.createElement("span");
+    caret.className = "caret";
+    caret.setAttribute("aria-hidden", "true");
+    const lines = ["Rubén", "Rodríguez"];
+
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        roleWord.textContent = HERO_ROLES[lang][0];
+        return;
+    }
+
+    // 1. Escribe el nombre
+    h1.replaceChildren();
+    for (const [index, line] of lines.entries()) {
+        if (index > 0) h1.append(document.createElement("br"));
+        const word = document.createElement("span");
+        word.className = "word";
+        word.setAttribute("aria-hidden", "true");
+        word.append(caret);
+        h1.append(word);
+        await sleep(index ? 120 : 400);
+        for (const ch of line) {
+            caret.before(ch);
+            await sleep(75);
+        }
+    }
+
+    // 2. El cursor baja a la línea de roles, que queda en loop
+    await sleep(500);
+    roleWord.after(caret);
+    for (let i = 0; ; i++) {
+        const role = HERO_ROLES[lang][i % HERO_ROLES[lang].length];
+        caret.classList.remove("is-idle");
+        for (const ch of role) {
+            roleWord.textContent += ch;
+            await sleep(70);
+        }
+        caret.classList.add("is-idle");
+        await sleep(2400);
+        caret.classList.remove("is-idle");
+        while (roleWord.textContent) {
+            roleWord.textContent = roleWord.textContent.slice(0, -1);
+            await sleep(35);
+        }
+        await sleep(300);
+    }
+}
+
 // =====================================================
 // INIT
 // =====================================================
@@ -535,4 +736,5 @@ if ("IntersectionObserver" in window) {
 const years = Math.floor((Date.now() - CAREER_START) / (365.25 * 24 * 60 * 60 * 1000));
 document.getElementById("years-exp").textContent = `${years}+`;
 document.getElementById("year").textContent = new Date().getFullYear();
+runHero();
 applyLang();
