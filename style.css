@@ -989,8 +989,12 @@ h3 {
     gap: 10px;
     margin-top: 28px;
     font-weight: 600;
-    word-break: break-all;
+    overflow-wrap: anywhere;
     transition: color 0.2s ease;
+}
+
+.contact-email i {
+    flex-shrink: 0;
 }
 
 .contact-email:hover {
@@ -1067,6 +1071,40 @@ h3 {
 .contact-form .btn {
     justify-self: start;
     margin-top: 4px;
+}
+
+.contact-form .btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+}
+
+.form-status {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+}
+
+.form-status[hidden] {
+    display: none;
+}
+
+.form-status.is-success {
+    background: color-mix(in srgb, var(--live) 12%, transparent);
+    color: var(--live);
+}
+
+.form-status.is-error {
+    background: color-mix(in srgb, #ef4444 12%, transparent);
+    color: #ef4444;
+}
+
+.form-status a {
+    text-decoration: underline;
 }
 
 /* =====================================================
@@ -1267,5 +1305,12 @@ h3 {
     .terminal pre {
         padding: 16px;
         font-size: 0.72rem;
+    }
+}
+
+/* Celulares muy angostos: el correo cabe cortando antes del @ */
+@media (max-width: 380px) {
+    .contact-email {
+        font-size: 0.85rem;
     }
 }

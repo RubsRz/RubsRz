@@ -9,11 +9,23 @@
     <meta name="author" content="Rubén Rodríguez" />
     <meta name="theme-color" content="#0b0d12" />
 
+    <link rel="canonical" href="https://ruben-rodriguez.netlify.app/" />
+
+    <!-- Vista previa al compartir el link (WhatsApp, LinkedIn, X, etc.) -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rubén Rodríguez" />
+    <meta property="og:locale" content="es_MX" />
     <meta property="og:title" content="Rubén Rodríguez | Desarrollador Web & Mobile" />
-    <meta property="og:description" content="Aplicaciones web y móviles, del backend a la pantalla." />
+    <meta property="og:description" content="Ingeniero en Desarrollo de Software. Aplicaciones web y móviles, del backend a la pantalla." />
     <meta property="og:url" content="https://ruben-rodriguez.netlify.app/" />
-    <meta property="og:image" content="https://ruben-rodriguez.netlify.app/src/img/ruben.jpg" />
+    <meta property="og:image" content="https://ruben-rodriguez.netlify.app/src/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rubén Rodríguez, Ingeniero en Desarrollo de Software" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rubén Rodríguez | Desarrollador Web & Mobile" />
+    <meta name="twitter:description" content="Ingeniero en Desarrollo de Software. Aplicaciones web y móviles, del backend a la pantalla." />
+    <meta name="twitter:image" content="https://ruben-rodriguez.netlify.app/src/img/og-image.jpg" />
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%234f8cff'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='white'>RR</text></svg>" />
 
@@ -136,7 +148,8 @@
                     <h2 data-i18n="contact.title">¿Hablamos?</h2>
                     <p data-i18n="contact.sub">Si tienes un proyecto, una vacante o solo quieres platicar de tecnología, escríbeme.</p>
                     <a class="contact-email" href="mailto:rodriguezperezrubenalejandro@gmail.com">
-                        <i class="fa-solid fa-envelope"></i> rodriguezperezrubenalejandro@gmail.com
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>rodriguezperezrubenalejandro<wbr />@gmail.com</span>
                     </a>
                     <p class="contact-location"><i class="fa-solid fa-location-dot"></i> <span data-i18n="contact.location">México</span></p>
                     <div class="socials">
@@ -165,6 +178,7 @@
                     <button type="submit" class="btn btn-primary">
                         <span data-i18n="contact.send">Enviar mensaje</span> <i class="fa-solid fa-paper-plane"></i>
                     </button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
                 </form>
             </div>
         </section>

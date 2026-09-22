@@ -344,6 +344,9 @@ const i18n = {
         "contact.message": "Mensaje",
         "contact.send": "Enviar mensaje",
         "contact.location": "México",
+        "contact.sending": "Enviando…",
+        "contact.success": "¡Gracias por escribirme! Te respondo lo antes posible.",
+        "contact.error": "No se pudo enviar el mensaje. Escríbeme directo a",
     },
     en: {
         "skip": "Skip to content",
@@ -382,6 +385,9 @@ const i18n = {
         "contact.message": "Message",
         "contact.send": "Send message",
         "contact.location": "Mexico",
+        "contact.sending": "Sending…",
+        "contact.success": "Thanks for reaching out! I'll get back to you as soon as I can.",
+        "contact.error": "The message couldn't be sent. Email me directly at",
     },
 };
 
@@ -627,6 +633,38 @@ navLinks.addEventListener("click", (e) => {
     if (e.target.closest("a")) {
         navLinks.classList.remove("is-open");
         menuBtn.setAttribute("aria-expanded", "false");
+    }
+});
+
+// Formulario de contacto: se envía a Netlify en segundo plano y muestra un mensaje propio
+// en lugar de la página de confirmación genérica de Netlify.
+const contactForm = document.querySelector(".contact-form");
+const formStatus = document.getElementById("form-status");
+contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const button = contactForm.querySelector("button[type=submit]");
+    const label = button.querySelector("span");
+    button.disabled = true;
+    label.textContent = t("contact.sending");
+    formStatus.hidden = true;
+
+    try {
+        const response = await fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(new FormData(contactForm)).toString(),
+        });
+        if (!response.ok) throw new Error(response.status);
+        contactForm.reset();
+        formStatus.className = "form-status is-success";
+        formStatus.innerHTML = `<i class="fa-solid fa-circle-check"></i><span>${t("contact.success")}</span>`;
+    } catch {
+        formStatus.className = "form-status is-error";
+        formStatus.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i><span>${t("contact.error")} <a href="mailto:rodriguezperezrubenalejandro@gmail.com">rodriguezperezrubenalejandro@gmail.com</a></span>`;
+    } finally {
+        formStatus.hidden = false;
+        button.disabled = false;
+        label.textContent = t("contact.send");
     }
 });
 
