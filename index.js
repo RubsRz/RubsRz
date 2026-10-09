@@ -61,6 +61,33 @@ const experience = [
 const projects = [
     {
         type: "web",
+        name: "PrecioGas MX",
+        year: "2026",
+        client: "Proyecto propio",
+        image: "src/img/preciogas.webp",
+        imageMobile: "src/img/preciogas-mobile.webp",
+        summary: {
+            es: "App web que encuentra la gasolina más barata cerca de ti, con los precios oficiales de las 13,850 estaciones de México y navegación paso a paso hasta la que elijas.",
+            en: "Web app that finds the cheapest fuel near you, using the official prices of Mexico's 13,850 stations, with turn-by-turn navigation to the one you pick.",
+        },
+        points: {
+            es: [
+                "Un script cruza los datos abiertos de la CRE con OpenStreetMap para sacar precios, estado y marca de cada estación, y genera un JSON de 310 KB: toda la app corre sin backend.",
+                "Mapa con las estaciones pintadas según su precio, búsqueda por ciudad y una “recomendada” que balancea precio contra la gasolina que gastas en llegar.",
+                "Navegación con seguimiento por GPS, instrucciones en español habladas, recálculo si te sales de la ruta y panel deslizable en celular.",
+            ],
+            en: [
+                "A script cross-references Mexico's open fuel-price data with OpenStreetMap to get each station's price, state and brand, producing a 310 KB JSON: the whole app runs with no backend.",
+                "Map colored by price, search by city, and a “recommended” pick that weighs price against the fuel you burn getting there.",
+                "GPS navigation with spoken Spanish directions, automatic rerouting and a drag-to-resize sheet on mobile.",
+            ],
+        },
+        stack: ["React", "Vite", "Leaflet", "Node.js", "OpenStreetMap"],
+        site: "https://preciogasmx.netlify.app",
+        privateRepo: true,
+    },
+    {
+        type: "web",
         name: "Transportes Mixtos Miranda",
         year: "2025",
         client: "Freelance",

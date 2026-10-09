@@ -33,6 +33,7 @@ Mobile: **Ionic · React Native · Capacitor**
 
 | Proyecto | Qué es | Stack |
 | :-- | :-- | :-- |
+| [**PrecioGas MX**](https://preciogasmx.netlify.app) | Encuentra la gasolina más barata cerca de ti, con los precios oficiales de las 13,850 estaciones del país y navegación paso a paso | React · Vite · Leaflet |
 | [**Transportes Mixtos Miranda**](https://transmiranda.com) | Sitio corporativo para una empresa de transporte de carga: desarrollo, hosting, SEO y analítica | React · Vite · PHP |
 | [**QR Check-In / Out**](https://github.com/RubsRz/QR-Check-In-Out-Tracker) | App móvil para registrar entradas y salidas de personal con códigos QR | Ionic · Angular · Capacitor |
 | [**Transportistas API**](https://github.com/RubsRz/ApiTransportistas) | Backend de una app móvil para asignar vehículos a conductores, con pruebas en Jest | Node.js · Express · MongoDB |
