@@ -61,6 +61,60 @@ const experience = [
 const projects = [
     {
         type: "web",
+        name: "QuéVeo",
+        year: "2026",
+        client: "Proyecto propio",
+        image: "src/img/queveo.webp",
+        imageMobile: "src/img/queveo-mobile.webp",
+        summary: {
+            es: "App para decidir qué ver: deslizas películas y series como en Tinder, armas tus listas y la app aprende de tus gustos para proponerte mejores opciones.",
+            en: "App to decide what to watch: swipe movies and shows Tinder-style, build your lists, and the app learns your taste to suggest better picks.",
+        },
+        points: {
+            es: [
+                "Motor de recomendación propio: cada decisión pesa distinto (un 5★ cuenta más que un “no me interesa”), arma tu perfil de géneros y reordena la baraja, con títulos sorpresa para no encerrarte en lo mismo.",
+                "Cuentas con Google y sincronización entre dispositivos con Firebase (Firestore con reglas por usuario); sin sesión funciona igual, guardando en el navegador.",
+                "Catálogo de TMDB en español con dónde ver cada título en México, modo “¿qué vemos hoy?” por tiempo y plataforma, y vista aparte para escritorio con atajos de teclado.",
+            ],
+            en: [
+                "Custom recommendation engine: every decision carries a different weight (a 5★ counts more than a “not interested”), builds your genre profile and re-ranks the deck, slipping in surprises so it never gets stale.",
+                "Google sign-in and cross-device sync with Firebase (Firestore with per-user rules); without an account it still works, storing everything in the browser.",
+                "TMDB catalog in Spanish with streaming availability in Mexico, a “what should we watch tonight?” mode filtered by time and platform, and a separate desktop layout with keyboard shortcuts.",
+            ],
+        },
+        stack: ["React", "Vite", "Firebase", "TMDB", "Vitest"],
+        site: "https://que-veo.netlify.app",
+        repo: "https://github.com/RubsRz/que-veo",
+    },
+    {
+        type: "web",
+        name: "Reto de Ahorro",
+        year: "2026",
+        client: "Proyecto propio",
+        image: "src/img/reto-ahorro.webp",
+        imageMobile: "src/img/reto-ahorro-mobile.webp",
+        summary: {
+            es: "App para llevar un reto de ahorro: el clásico de 365 días, 52 semanas o tu propia meta. Sorteas el monto del día y la app lleva la cuenta, la racha y el avance.",
+            en: "App to run a savings challenge: the classic 365-day one, 52 weeks, or your own goal. Draw the day's amount and the app tracks progress, streaks and pace.",
+        },
+        points: {
+            es: [
+                "Cinco modos, incluida una meta personalizada: tú pones cuánto y en cuántos días, y el algoritmo reparte los montos de forma ascendente hasta sumar exacto la meta.",
+                "Calcula racha, promedio diario, fecha estimada de término y si vas adelantado o atrasado frente al plan, con una gráfica SVG hecha a mano.",
+                "La lógica vive separada de React y está cubierta con 18 pruebas en Vitest; los datos se guardan en el navegador, con exportar e importar para cambiar de dispositivo.",
+            ],
+            en: [
+                "Five modes, including a custom goal: you set the amount and the number of days, and the algorithm spreads the deposits upward so they add up exactly.",
+                "Tracks streaks, daily average, projected finish date and whether you're ahead or behind plan, with a hand-built SVG chart.",
+                "The logic lives outside React and is covered by 18 Vitest tests; data stays in the browser, with export and import to move between devices.",
+            ],
+        },
+        stack: ["React", "Vite", "Vitest", "SVG"],
+        site: "https://mi-reto-ahorro.netlify.app",
+        repo: "https://github.com/RubsRz/reto-ahorro",
+    },
+    {
+        type: "web",
         name: "PrecioGas MX",
         year: "2026",
         client: "Proyecto propio",
