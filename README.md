@@ -33,7 +33,7 @@ Mobile: **Ionic · React Native · Capacitor**
 
 | Proyecto | Qué es | Stack |
 | :-- | :-- | :-- |
-| [**QuéVeo**](https://que-veo.netlify.app) | Descubre pelis y series deslizando: aprende de tus gustos, arma tus listas y te dice dónde verlas | React · Firebase · TMDB |
+| [**QuéVeo**](https://que-veo.netlify.app) | Descubre pelis y series deslizando: las calificas, ves qué le gustó a tus amigos y armas listas en conjunto | React · Firebase · TMDB |
 | [**Reto de Ahorro**](https://mi-reto-ahorro.netlify.app) | Reto de ahorro de 365 días, 52 semanas o tu propia meta, con racha y gráfica de avance | React · Vite · Vitest |
 | [**PrecioGas MX**](https://preciogasmx.netlify.app) | Encuentra la gasolina más barata cerca de ti, con los precios oficiales de las 13,850 estaciones del país y navegación paso a paso | React · Vite · Leaflet |
 | [**Transportes Mixtos Miranda**](https://transmiranda.com) | Sitio corporativo para una empresa de transporte de carga: desarrollo, hosting, SEO y analítica | React · Vite · PHP |
