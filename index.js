@@ -67,19 +67,19 @@ const projects = [
         image: "src/img/queveo.webp",
         imageMobile: "src/img/queveo-mobile.webp",
         summary: {
-            es: "App para decidir qué ver: deslizas películas y series, las calificas de media en media estrella y ves qué le gustó a tus amigos antes de darle play.",
-            en: "App to decide what to watch: swipe movies and shows, rate them in half-star steps, and see what your friends liked before hitting play.",
+            es: "App para decidir qué ver: deslizas películas y series, las calificas de media en media estrella y ves qué le gustó a tus amigos.",
+            en: "App to decide what to watch: swipe movies and shows, rate them in half-star steps and see what your friends liked.",
         },
         points: {
             es: [
-                "Con amigos: te agregas por usuario o con un link, y en la baraja ves quién ya la vio y con cuántas estrellas. Listas en conjunto en tiempo real, afinidad entre gustos y recomendaciones directas, con reglas de Firestore versionadas y cubiertas por 35 pruebas de permisos.",
-                "Motor de recomendación propio: la calificación manda (de 0.5 “Desastre” a 5 “Obra maestra”), arma tu perfil de géneros y reordena la baraja; traduce los géneros de cine a los de televisión, porque TMDB no usa los mismos, y recupera títulos descartados cada 50 calificaciones.",
-                "Pensada para el celular: los gestos se escuchan en la ventana para que iOS no los deje a medias, y las hojas se cierran de cuatro formas. Probada con Playwright sobre WebKit, el motor de Safari, con pantalla y toques de iPhone.",
+                "Con amigos: te agregas por usuario o con un link, y en la baraja ves quién ya la vio y con cuántas estrellas. Listas en conjunto en tiempo real, afinidad y recomendaciones directas, sobre reglas de Firestore cubiertas por 35 pruebas de permisos.",
+                "Motor de recomendación propio: la calificación manda (de 0.5 “Desastre” a 5 “Obra maestra”) y reordena la baraja según tu perfil de géneros, traduciendo los de cine a los de televisión, porque TMDB no usa los mismos.",
+                "Pensada para el celular: los gestos se escuchan en la ventana para que iOS no los deje a medias. Probada con Playwright sobre WebKit, el motor de Safari, con pantalla y toques de iPhone.",
             ],
             en: [
-                "Social: add friends by username or a share link, and the deck shows who already watched each title and how they rated it. Real-time shared lists, taste affinity and direct recommendations, with Firestore rules kept in the repo and covered by 35 permission tests.",
-                "Custom recommendation engine: the rating drives everything (from 0.5 “Disaster” to 5 “Masterpiece”), builds your genre profile and re-ranks the deck; it maps film genres to their TV counterparts, since TMDB doesn't share them, and brings back skipped titles every 50 ratings.",
-                "Built for the phone: gestures are tracked on the window so iOS can't leave them half-done, and sheets close four different ways. Tested with Playwright on WebKit, Safari's engine, using an iPhone viewport and real touches.",
+                "Social: add friends by username or share link, and the deck shows who already watched each title and how they rated it. Real-time shared lists, taste affinity and direct recommendations, on Firestore rules covered by 35 permission tests.",
+                "Custom recommendation engine: the rating drives everything (0.5 “Disaster” to 5 “Masterpiece”) and re-ranks the deck from your genre profile, mapping film genres to their TV counterparts, since TMDB doesn't share them.",
+                "Built for the phone: gestures are tracked on the window so iOS can't leave them half-done. Tested with Playwright on WebKit, Safari's engine, using an iPhone viewport and real touches.",
             ],
         },
         stack: ["React", "Vite", "Firebase", "TMDB", "Vitest", "Playwright"],
