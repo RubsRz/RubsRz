@@ -72,14 +72,14 @@ const projects = [
         },
         points: {
             es: [
-                "Con amigos: te agregas por usuario o con un link, y en la baraja ves quién ya la vio y con cuántas estrellas. Listas en conjunto en tiempo real, afinidad y recomendaciones directas, sobre reglas de Firestore cubiertas por 35 pruebas de permisos.",
+                "Con amigos: te agregas por usuario o con un link, y en la baraja ves quién ya la vio y con cuántas estrellas. Listas en conjunto en tiempo real, afinidad y recomendaciones directas. Lo que descartas no se comparte, y un amigo solo puede leer tus calificaciones, nunca escribirlas.",
                 "Motor de recomendación propio: la calificación manda (de 0.5 “Desastre” a 5 “Obra maestra”) y reordena la baraja según tu perfil de géneros, traduciendo los de cine a los de televisión, porque TMDB no usa los mismos.",
-                "Pensada para el celular: los gestos se escuchan en la ventana para que iOS no los deje a medias. Probada con Playwright sobre WebKit, el motor de Safari, con pantalla y toques de iPhone.",
+                "Pensada para el celular: deslizas para decidir, un toque abre la ficha y dejar el dedo muestra el póster completo. En escritorio, menú lateral, ficha fija al lado y atajos de teclado.",
             ],
             en: [
-                "Social: add friends by username or share link, and the deck shows who already watched each title and how they rated it. Real-time shared lists, taste affinity and direct recommendations, on Firestore rules covered by 35 permission tests.",
+                "Social: add friends by username or share link, and the deck shows who already watched each title and how they rated it. Real-time shared lists, taste affinity and direct recommendations. What you skip is never shared, and friends can only read your ratings, never write them.",
                 "Custom recommendation engine: the rating drives everything (0.5 “Disaster” to 5 “Masterpiece”) and re-ranks the deck from your genre profile, mapping film genres to their TV counterparts, since TMDB doesn't share them.",
-                "Built for the phone: gestures are tracked on the window so iOS can't leave them half-done. Tested with Playwright on WebKit, Safari's engine, using an iPhone viewport and real touches.",
+                "Built for the phone: swipe to decide, tap for the details, hold to see the full poster. On desktop, a side menu, the details pinned beside the deck and keyboard shortcuts.",
             ],
         },
         stack: ["React", "Vite", "Firebase", "TMDB", "Vitest", "Playwright"],
@@ -101,12 +101,12 @@ const projects = [
             es: [
                 "Cinco modos, incluida una meta personalizada: tú pones cuánto y en cuántos días, y el algoritmo reparte los montos de forma ascendente hasta sumar exacto la meta.",
                 "Calcula racha, promedio diario, fecha estimada de término y si vas adelantado o atrasado frente al plan, con una gráfica SVG hecha a mano.",
-                "La lógica vive separada de React y está cubierta con 18 pruebas en Vitest; los datos se guardan en el navegador, con exportar e importar para cambiar de dispositivo.",
+                "Los datos se guardan en el navegador, con exportar e importar para cambiar de dispositivo sin perder el avance.",
             ],
             en: [
                 "Five modes, including a custom goal: you set the amount and the number of days, and the algorithm spreads the deposits upward so they add up exactly.",
                 "Tracks streaks, daily average, projected finish date and whether you're ahead or behind plan, with a hand-built SVG chart.",
-                "The logic lives outside React and is covered by 18 Vitest tests; data stays in the browser, with export and import to move between devices.",
+                "Data stays in the browser, with export and import so you can switch devices without losing your progress.",
             ],
         },
         stack: ["React", "Vite", "Vitest", "SVG"],
@@ -211,12 +211,12 @@ const projects = [
             es: [
                 "API REST con Express y MongoDB para vehículos, registros y transiciones conductor ↔ vehículo.",
                 "Login con contraseñas cifradas (bcrypt), gestión de empleados y consulta de vehículos disponibles.",
-                "Pruebas unitarias, de integración y funcionales con Jest.",
+                "Historial completo de cada cambio, para saber quién trajo qué vehículo y desde cuándo.",
             ],
             en: [
                 "REST API with Express and MongoDB for vehicles, logs and driver ↔ vehicle handovers.",
                 "Login with hashed passwords (bcrypt), employee management and available-vehicle lookup.",
-                "Unit, integration and functional tests with Jest.",
+                "Full history of every handover, so you know who had which vehicle and since when.",
             ],
         },
         stack: ["Node.js", "Express", "MongoDB", "Jest"],
